@@ -14,7 +14,7 @@ const Nav = () => {
             <a href="/">Home</a>
           </li>
           <li className="nav__list">
-            <a href="/">Home</a>
+            <a href="/">Books</a>
           </li>
           <button className="btn__menu">
             <FontAwesomeIcon icon={faBars} />
