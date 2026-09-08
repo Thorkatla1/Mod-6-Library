@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import LibraryLogo from "../assets/Library.svg";
 const Nav = () => {
   return (
@@ -21,7 +21,7 @@ const Nav = () => {
           </button>
           <li className="nav__icon">
             <a href="/cart" className="nav__link">
-              <FontAwesomeIcon icon='faShoppingCart' />
+              <FontAwesomeIcon icon={faShoppingCart} />
             </a>
           </li>
         </ul>
