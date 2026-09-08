@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faShoppingCart,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 import LibraryLogo from "../assets/Library.svg";
 const Nav = () => {
   return (
@@ -10,10 +14,10 @@ const Nav = () => {
           <img src={LibraryLogo} alt="Library Logo" className="logo" />
         </a>
         <ul className="nav__links">
-          <li className="nav__link">
+          <li className="nav__list">
             <a href="/">Home</a>
           </li>
-          <li className="nav__link">
+          <li className="nav__list">
             <a href="/">Books</a>
           </li>
           <button className="btn__menu">
@@ -23,8 +27,31 @@ const Nav = () => {
             <a href="/cart" className="nav__link">
               <FontAwesomeIcon icon={faShoppingCart} />
             </a>
+            <span className="cart__count">2</span>
           </li>
         </ul>
+        <div className="menu__backdrop">
+          <button className="btn__menu btn__menu--close">
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+        <ul className="menu__links">
+          <li className="menu__list">
+            <a href="/" className="menu__link">
+              Home
+            </a>
+          </li>
+          <li className="menu__list">
+            <a href="/books" className="menu__link">
+              Books
+            </a>
+          </li>
+          <li className="menu__list">
+            <a href="/cart" className="menu__link">
+              Cart
+            </a>
+          </li>
+        </ul>
+        </div>
       </div>
     </nav>
   );
