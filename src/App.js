@@ -2,8 +2,9 @@
 import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import Highlights from "./components/Highlights";
-import Features from "./components/Features";
+import Featured from "./components/Featured";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
   <Nav />
   <Landing />
   <Highlights />
-  <Features />
+  <Featured />
   <Footer />
 
     </div>
