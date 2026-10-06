@@ -1,0 +1,26 @@
+
+const Books = () => {
+  return (
+    <div id="books__body">
+      <main id="books__main">
+        <section>
+          <div className="books__container">
+            <div className="row">
+              <div className="books__header">
+                <h2 className="section__title books__header--title">All Books</h2>
+                <section id="filter">
+                   <option value="" selection disabled>Sort by:</option>
+                   <option value="Low_to_High">Price, Low to High</option>
+                   <option value="High_to_Low">Price, High to Low</option>
+                   <option value="Rating">Rating</option>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+};
+
+export default Books;
